@@ -29,7 +29,7 @@ Level.destroyBlock(getPlayerX(), getPlayerY()+2, getPlayerZ()-1);
 Level.destroyBlock(getPlayerX()-1, getPlayerY()+2, getPlayerZ()); 
 Level.destroyBlock(getPlayerX()-1, getPlayerY()+2, getPlayerZ()-1); 
 } 
-if (getTile (getPlayerX (),getPlayerY ()-1.6,getPlayerZ ()) == 78)
+if (getTile (getPlayerX (),getPlayerY ()-1.6,getPlayerZ ()) == 78 && rain == 1)
 {
 setTile(getPlayerX()+1, getPlayerY()+2, getPlayerZ(), 80); 
 setTile(getPlayerX(), getPlayerY()+2, getPlayerZ()+1, 80); 
@@ -45,7 +45,7 @@ Level.destroyBlock(getPlayerX(), getPlayerY()+2, getPlayerZ()-1);
 Level.destroyBlock(getPlayerX()-1, getPlayerY()+2, getPlayerZ()); 
 Level.destroyBlock(getPlayerX()-1, getPlayerY()+2, getPlayerZ()-1); 
 }
-else
+else if (rain == 1)
 {
 setTile(getPlayerX()+1, getPlayerY()+2, getPlayerZ(), 9); 
 setTile(getPlayerX(), getPlayerY()+2, getPlayerZ()+1, 9); 
