@@ -45,7 +45,7 @@ Level.destroyBlock(getPlayerX(), getPlayerY()+2, getPlayerZ()-1);
 Level.destroyBlock(getPlayerX()-1, getPlayerY()+2, getPlayerZ()); 
 Level.destroyBlock(getPlayerX()-1, getPlayerY()+2, getPlayerZ()-1); 
 }
-else if (rain == 1)
+else if (getTile (getPlayerX (),getPlayerY ()-2,getPlayerZ ()) !== 0 && rain == 1)
 {
 setTile(getPlayerX()+1, getPlayerY()+2, getPlayerZ(), 9); 
 setTile(getPlayerX(), getPlayerY()+2, getPlayerZ()+1, 9); 
